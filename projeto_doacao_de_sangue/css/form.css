@@ -1,0 +1,63 @@
+form
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+form
+div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label
+{
+    font-weight: 700;
+}
+input
+{
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    border:  1px solid  #BFBFBF;
+    border-radius: 5px;
+}
+table
+{
+    border:  1px solid  #BFBFBF;
+    white-space: nowrap;
+    
+}
+td
+{
+    font-size: 13px;
+    border:  1px solid  #BFBFBF;
+    padding: 0 0.3rem;
+}
+thead
+tr
+td
+{
+    font-weight: 800;
+}
+tbody
+tr
+td
+{
+    font-weight: 500;
+    color: #0099DD; 
+}
+button
+{
+    padding: 0.8rem;
+    margin-top: 20px;
+    border: none;
+    background-color: #0099DD;
+    color: #FDFDFDFD;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+
+

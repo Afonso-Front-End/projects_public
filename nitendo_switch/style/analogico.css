@@ -1,0 +1,115 @@
+.analogico{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 61px;
+    border-radius: 50%;
+    border: 1px solid #0e252707;
+    background-color: transparent;
+    z-index: 1;
+    cursor: none;
+}
+.borda-analogico{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    z-index: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.438);
+    border-left: 1px solid rgba(128, 128, 128, 0.438);
+    border-right: 1px solid rgba(128, 128, 128, 0.644);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.644);
+    filter: blur(0.4px);
+    position: absolute;
+    top: 62px;
+    background-color: #3a3636;
+    overflow: hidden;
+}
+.borda-analogico-center{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #1d1d1dc9;
+    border: 1px solid rgba(54, 53, 53, 0.644);
+    filter: blur(0.4px);
+    position: absolute;
+    top: 66px;
+    margin-right: 2px;
+    background-color: #363131;
+}
+.borda-analogico-center-center{
+    z-index: 5;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(
+        rgba(231, 221, 221, 0.255),
+        rgba(0,0,0,0.255)
+    );
+    position: absolute;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+.analogico-direito{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 160px;
+    border-radius: 50%;
+    border: 1px solid #0e252707;
+    left: 30px;
+    z-index: 3;
+    cursor: none;
+}
+.borda-analogico-direito{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    z-index: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.438);
+    border-left: 1px solid rgba(128, 128, 128, 0.438);
+    border-right: 1px solid rgba(128, 128, 128, 0.644);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.644);
+    filter: blur(0.4px);
+    position: absolute;
+    top: 161px;
+    background-color: #3a3636;
+    overflow: hidden;
+    left: 31px;
+}
+.borda-analogico-center-direito{
+position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #1d1d1dc9;
+    border: 1px solid rgba(54, 53, 53, 0.644);
+    filter: blur(0.4px);
+    position: absolute;
+    top: 166px;
+    margin-right: 2px;
+    background-color: #363131;
+    left: 35px;
+}
+.borda-analogico-center-center-direito{
+    z-index: 5;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(
+        rgba(231, 221, 221, 0.255),
+        rgba(0,0,0,0.255)
+    );
+    position: absolute;
+    z-index: 5;
+}

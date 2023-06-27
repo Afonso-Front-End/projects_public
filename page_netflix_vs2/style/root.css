@@ -1,0 +1,23 @@
+@import url('/style/header.css');
+@import url('/style/main.css');
+@import url('/style/mobile.css');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FDFDFD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    background-color: #00081D;
+}
+a {
+    color: #FDFDFD;
+    font-weight: 700;
+}
+img {
+    width: 100%;
+}

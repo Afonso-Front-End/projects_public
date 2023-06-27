@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+#logo{
+    color: white;
+    font-size: 3em;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 40px;
+    text-decoration: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header > nav > ul >li a{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    height: 300px;
+    text-align: center;
+    flex:  1 1 200px;
+    margin: 10px;
+    margin-bottom: 50px;
+    background-color: rgb(231, 217, 217);
+    border-radius: 20px;
+    max-width: 100%;
+    
+}
+.article{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(231, 217, 217);
+    margin: auto;
+    height: 50vh;
+}
+#artigo{
+    display: grid;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 0, 0.397);
+    width: 900px;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.propagandas{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 215, 215);
+    gap: 40px;
+    padding: 20px;
+
+}
+#propaganda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 6px;
+}
+@media screen and (max-width:600px){
+    #logo{
+        color: white;
+        font-size: 3em;
+        padding-bottom: 30px;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.24);
+        padding: 30px;
+        text-decoration: none;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    header > nav > ul >li a{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+}
+
+
+
+
+

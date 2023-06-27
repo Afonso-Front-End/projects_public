@@ -1,0 +1,51 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 12px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+.rating strong{
+    font-weight: 600;
+}
+.movie span{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+.movie h1{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.movie p{
+    font-size: 13px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 400px;
+}
+.movie button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 70px;
+    background: #1B848A;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.movie button:hover{
+    filter: brightness(0.9);
+}
+.movie button i{
+    
+    font-size: 30px;
+}

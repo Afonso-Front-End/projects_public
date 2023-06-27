@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="/projeto_bancario/style/form.css">
+    <link rel="stylesheet" href="/projeto_bancario/style/mobile.css">
+</head>
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="loader-container" id="aviso">
+        <div class="textaviso">
+            <div id="textaviso"></div>
+            <button onclick="comfirm()">ok</button>
+        </div>
+    </div>
+    
+    <form>
+        <div class="area-login">
+            <h1>Criar conta</h1>
+            <label>Crie sua conta</label>
+            <input type="text" placeholder="Nome" id="nome">
+            <input type="email" placeholder="E-mail" id="email">
+            <input type="number" placeholder="CPF" id="cpf">
+            <input type="password" placeholder="Senha" id="senha" maxlength="4">
+            <div class="area-botoes">
+                <input type="button" value="Voltar" class="button"  onclick="back()">
+                <input type="button" value="Criar conta" class="button" onclick="create()">
+            </div>
+        </div>
+    </form>
+    <script src="/projeto_bancario/js/acount.js"></script>
+</body>
+</html>

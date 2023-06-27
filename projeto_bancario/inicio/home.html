@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel administrativo</title>
+
+    <link rel="stylesheet" href="/projeto_bancario/style/home.css">
+    <link rel="stylesheet" href="/projeto_bancario/style/mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+    <div class="loader-container" id="aviso">
+        <div class="textaviso">
+            <div id="textaviso"></div>
+            <button onclick="comfirm()">ok</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo" onclick="openDados()">
+                    <img src="/projeto_bancario/icons/person-circle.svg">
+                    <h1 id="topnome">nome</h1>
+                </div>
+                <ul id="lista-01">
+                    <li id="item-01" onclick="openHome()"><button>Home</button></li>
+                    <li id="item-02" onclick="openSaldo()"><button>Saldo</button></li>
+                    <li id="item-03" onclick="openExtrato()"><button>Extrato</button></li>
+                    <li id="item-04" onclick="openTransferencia()"><button>Transferencia</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="home" id="home">
+                <div class="textHome">
+                    <h1 id="renderNome">Olá nome!</h1>
+                    <p>Sejá bem vindo(a) aproveite sua conta!</p>
+                </div>
+            </div>
+            <div class="extrato" id="extrato">
+                <div class="textExtrato" id="textExtrato">
+                    <img src="/projeto_bancario/icons/exclamation-lg.svg">
+                    <h1>Sem transações</h1>
+                    <p>No momento não existem transações.</p>
+                </div>
+
+                <div class="section-03">
+                    <div class="lista-02">
+
+                    </div>
+                    <div class="lista-03">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="saldo" id="saldo">
+                <div class="textSaldo">
+                    <h2>Saldo em conta</h2>
+                    <h3 id="renderSaldo">R$ 00,00</h3>
+                    <img src="/projeto_bancario/icons/lock-fill.svg">
+                </div>
+            </div>
+            <div class="dados" id="dados">
+                <div class="textDados">
+                    <h1>Dados pessoais</h1>
+                    <p id="dataNome">Nome:</p>
+                    <p id="dataEmail">E-mail:</p>
+                    <p id="dataCPF">CPF:</p>
+                    <button class="button" onclick="exite()">Sair</button>
+                </div>
+            </div>
+            <div class="transferencia" id="transferencia">
+                <div class="textTransferencia">
+                    <p>Para quem vocé quer fazer uma transferencia?</p>
+                    <input type="text" placeholder="E-mail ou CPF" id="buscar">
+                    <input type="button" value="Pesquisar" onclick="pesquisar()">
+                </div>
+            </div>
+            <div class="valortransferencia" id="valortransferencia">
+                <div class="textTransferencia">
+                    <p id="dataNomeTransf">Nome:</p>
+                    <p id="dataEmailTransf">E-mail:</p>
+                    <p id="dataCPFTransf">CPF:</p>
+
+                    <p>Digite o valor.</p>
+                    <input type="text" placeholder="Digite um valor." id="valor">
+                    <input type="button" value="Enviar" onclick="enviar()">
+                    <input type="button" value="Voltar" onclick="closed()">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/projeto_bancario/js/home.js"></script>
+    <script>
+        var listItems = document.querySelectorAll("#lista-01 li");
+
+        listItems.forEach(function (item) {
+            listItems[0].classList.add("selected");
+            item.addEventListener("click", function () {
+                listItems.forEach(function (li) {
+                    li.classList.remove("selected");
+                });
+                this.classList.add("selected");
+            });
+        });
+    </script>
+</body>
+
+</html>

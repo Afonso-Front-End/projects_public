@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <!--All css-->
+    <link rel="stylesheet" href="style/all.css">
+    <!--Link icon google-->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+    <title>Music Play</title>
+</head>
+<body>
+    <div class="container-album">
+        <div class="content-album-principal">
+            <div class="titulo">
+                <h2>Albums</h2>
+            </div>
+            <div class="album">
+                <div class="album-img"></div>
+                <h2>Imagine Dragons</h2>
+            </div>
+            <div class="albums-musicas">
+                <div class="album-card">
+                    <div class="card">
+                        <img src="img/imgAlbumImagineDragons/imagine-dragons-02.jpg" alt="">
+                    </div>
+                    <div class="album-titulo">
+                        <p>Imagine Dragons</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lista-musicas">
+        <div class="menu">
+            <div class="icon">
+                <h2>Lista de Musicas</h2>
+                <span class="material-symbols-outlined para-baixo">expand_more</span>
+            </div>
+        </div>
+        <div class="lista">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="card-play-musica">
+        <!--Menu card-->
+        <div class="menu-card-play">
+            <div class="icon-card-menu">
+                <span class="material-symbols-outlined para-cima-menu-card-play">expand_less</span>
+                <span class="material-symbols-outlined para-baixo-menu-card-play">expand_more</span>
+            </div>
+        </div>
+        <div class="card-play">
+            <div class="card-play-img">
+                <div class="imgcard-play">
+                    <img  class="imgcard" src="img/card-play.jpg" alt="">
+                </div>
+                <!--Card descrição-->
+                <div class="card-descricao">
+                    
+                    <h2>Nome da musica</h2>
+                    
+                    <div class="dados">
+                        <p>Nome artista</p>
+                        <span class="material-symbols-outlined " id="favorite">favorite</span>
+                    </div>
+                </div>
+
+                <!--Duração-->
+                <div class="duration">
+                    <div class="barra">
+                        <progress id="pg" value="0" max="1"></progress>
+                        <div class="ponto"></div>
+                    </div>
+                </div>
+                <!--Tempo da muscia-->
+                <div class="tempo-music">
+                    <p class="inicio">0:00</p>
+                    <p class="fim">0:00</p>
+                </div>
+            </div>
+            <div class="controls-play">
+                <div class="play-controls">
+                    <span class="material-symbols-outlined " id="voltar">skip_previous</span>
+                    <div class="play-pause"><span class="material-symbols-outlined " id="play">play_arrow</span>
+                    <span class="material-symbols-outlined " id="pause">pause</span></div>
+                    <span class="material-symbols-outlined " id="proxima">skip_next</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src=""></audio>
+    <script src="js/variavei.js" defer></script>
+    <script src="js/eventosClick.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/funcoes.js" defer></script>
+    <script src="js/arraymusica.js" defer></script>
+</body>
+</html>

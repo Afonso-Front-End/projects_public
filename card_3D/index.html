@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2 id="subtitulo">01</h2>
+                <h3 id="subtitulo-h3">CARD 1</h3>
+                <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cum ratione ad nisi laborum dicta illo, repellat alias aperiam esse impedit inventore quidem nam eos, consectetur et at labore iste?</p>
+                <a id="link" href="#">Mais imformações</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 id="subtitulo">02</h2>
+                <h3 id="subtitulo-h3">CARD 2</h3>
+                <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cum ratione ad nisi laborum dicta illo, repellat alias aperiam esse impedit inventore quidem nam eos, consectetur et at labore iste?</p>
+                <a id="link" href="#">Mais imformações</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 id="subtitulo">03</h2>
+                <h3 id="subtitulo-h3">CARD 3</h3>
+                <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cum ratione ad nisi laborum dicta illo, repellat alias aperiam esse impedit inventore quidem nam eos, consectetur et at labore iste?</p>
+                <a id="link" href="#">Mais imformações</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max:25,
+            speed:400,
+            glare:true,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.l1{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    border-top-left-radius: 60px;
+    left: -3px;
+    top: -3px;
+    z-index: 0;
+    background-color: #1d1d1d;
+    filter: blur(0.6px);
+}
+.l1-animation{
+    animation: animacontroleEsquerdo 2s ;
+
+}
+.r1-animation{
+    animation: animacontroleDireito 2s ;
+
+}
+.r1{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    border-top-right-radius: 60px;
+    top: -3px;
+    right: -3px;
+    z-index: 0;
+    background-color: #1d1d1d;
+    filter: blur(0.6px);
+}

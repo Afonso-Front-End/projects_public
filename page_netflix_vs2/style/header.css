@@ -1,0 +1,28 @@
+/* Heder */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    padding: 0 2rem;
+}
+header .logo img{
+    width: 9.25rem;
+}
+
+header .login button {
+    background-color: #C11119;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 9px;
+}
+header .login select {
+    padding: 0.4rem 1rem;
+    border: none;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+}

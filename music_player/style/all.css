@@ -1,0 +1,8 @@
+@import 'album.css';
+@import 'root.css';
+@import 'listamusicas.css';
+@import 'cardplay.css';
+
+body {
+    overflow: hidden;
+}

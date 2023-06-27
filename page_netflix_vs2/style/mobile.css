@@ -1,0 +1,69 @@
+@media screen and (max-width:1500px) {
+    main .title .title-default h1 {
+        font-size: 3rem;
+    }
+    main .title .title-default h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:760px) {
+    main .title .title-default h1 {
+        font-size: 2.5rem;
+    }
+    main .title .title-default h2 {
+        font-size: 1rem;
+    }
+    header .logo img{
+        width: 5.5rem;
+    }
+}
+@media screen and (max-width:900px) {
+    main .title .title-default h1 {
+        font-size: 3rem;
+    }
+    main .title .title-default h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:760px) {
+    main .title .title-default h1 {
+        font-size: 2.5rem;
+    }
+    main .title .title-default h2 {
+        font-size: 1rem;
+    }
+    header .logo img{
+        width: 5.5rem;
+    }
+}
+@media screen and (max-width:600px) {
+    main .container-title{
+        padding: 0 1.5rem;
+    }
+    main .title .title-default h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    main .title .title-default h2 {
+        font-size: 1rem;
+    }
+    main .title .title-default p {
+        font-size: 1rem;
+    }
+    main .title {
+        min-height: 50vh;
+    }
+    main .secao .secao-card{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main .secao {
+        padding: 0 1rem;
+    }
+    main .secao .reverse{
+        flex-wrap: wrap-reverse;
+    }
+
+}
+

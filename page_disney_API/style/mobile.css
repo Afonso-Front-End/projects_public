@@ -1,0 +1,54 @@
+@media screen and (max-width:720px) {
+    main .movies ul li{
+        width: 200px;
+        height: 130px;
+    }
+    main .date_genre span{
+        font-size: 12px;
+    }
+    main .date_genre h4{
+        font-size: 12px;
+    }
+    main .date_genre{
+        gap: 5px;
+    }
+    main .rating p{
+        font-size: 13px;
+    }
+    main .title p{
+        font-size: 10px;
+        height:80px;
+        overflow: auto;
+    }
+    main .title h1{
+        font-size: 20px;
+    }
+    main .title p{
+        font-size: 10px;
+    }
+    main .contain_description{
+        height: 100%;
+        padding:0rem 0rem;
+        display: flex;
+
+    }
+}
+@media screen and (max-width:460px) {
+    main .contain_description button{
+            width: 100px;
+            height: 40px;
+            
+            justify-content: center;
+            gap: 0px;
+            font-size: 10px;
+    }
+}
+@media screen and (max-width:405px) {
+    main .date_genre{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+}
+

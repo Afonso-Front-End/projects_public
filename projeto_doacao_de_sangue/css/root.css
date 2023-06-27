@@ -1,0 +1,18 @@
+@import url(/css/form.css);
+@font-face {
+    font-family:'Poppins';
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    word-wrap: nowrap;
+}

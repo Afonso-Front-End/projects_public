@@ -1,0 +1,176 @@
+main{
+    width: 100%;
+    height: calc(100%);
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.left_description{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.right_movies{
+    width: 500px;
+    height: 500px;
+    padding: 0.5rem;
+}
+.contain_description{
+    height: 100%;
+    padding:2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contain_movies{
+    height: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.movies ul{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+main.active .contain_movies{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+.rating{
+    display: flex;
+    gap: 10px;
+}
+.rating img{
+    width:40px;
+    height: 20px;
+}
+.rating p{
+    font-weight: 400;
+}
+.date_genre{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.date_genre span{
+    font-weight: 200;
+}
+.date_genre h4{
+    font-weight: 500;
+}
+.title{
+   display: flex;
+   flex-direction: column;
+}
+.title h1{
+    font-size: 50px;
+    width: 100%;
+}
+.title p{
+    width: 100%;
+    max-width: 500px;
+    font-weight: 300;
+}
+.contain_description button{
+    background: linear-gradient(
+        to left,
+        rgb(0, 153, 255),
+        rgb(0, 140, 255));
+        border: none;
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        margin-top: 20px;
+        color: white;
+        font-weight: 600;
+        text-transform: capitalize;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+.contain_description button i{
+    font-size: 20px;
+}
+.contain_description button:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+.contain_movies{
+    z-index: 1;
+}
+.movies{
+    height: 100%;
+    overflow: auto;
+}
+.movies::-webkit-scrollbar {
+   background-color: transparent;
+   width: 6px;
+}
+.movies::-webkit-scrollbar-thumb {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+.movies ul li{
+    width: 250px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0.3rem;
+    background-position: center;
+    background-size: cover;
+    transform: scale(0.9);
+}
+.movies ul li button:hover{
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}
+.movies ul li h3{
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 13px;
+}
+.movies ul li h4{
+    font-weight: 500;
+    line-height: 20px;
+}
+.movies ul button{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1d1d1d;
+}
+.movies ul button:active{
+    background: linear-gradient(
+        rgba(0, 204, 255, 0.8),
+        rgb(0, 204, 255)
+    );
+    transition: all 0.5s ease;
+    color: #f2f2f2;
+}
+.movies ul button i{
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+}

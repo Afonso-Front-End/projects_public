@@ -1,0 +1,20 @@
+@import url('/style/header.css');
+@import url('/style/main.css');
+@import url('/style/mobile.css');
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(/fonts/Quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: 'Quicksand-bold';
+    src: url(/fonts/Quicksand/static/Quicksand-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}

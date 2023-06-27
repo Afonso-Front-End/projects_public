@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to top,rgba(0,0,1,.8) 0,rgba(0, 0, 0, 0.631) 60%,rgba(0,0,1,.8) 100%),url(img/Netflix-1200x900-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.logo{
+    margin-left: 30px;
+}
+.select-item{
+    padding: 10px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.145);
+    color: #f1f1f1;
+}
+option{
+    background-color: darkgray;
+}
+.btn{
+    padding: 10px;
+    margin-right: 30px;
+    width: 82px;
+    background: #E50914;
+    border: none;
+    box-shadow: 0 5px 50px black;
+    color: #f1f1f1;
+}
+#ir{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.card1{
+    max-width: 900px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#titulo{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+#subtitulo{
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+#titulo3grau{
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.email{
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 50%;
+    outline: none;
+
+}
+.btn2{
+    padding: 20px;
+    background-color: #E50914;
+    border: 0;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+#entrar{
+    color: white;
+    text-decoration: none;
+}
+.card2{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    border-top: 10px solid #222222;
+    border-bottom: 10px solid #222222;
+    align-items: center;
+}
+.conteudo2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 100px;
+}
+#titulo-conte{
+    font-size: 3em;
+}
+#tv{
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+}
+.card3{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px solid #222222;
+    align-items: center;
+}
+.conteudo3{
+
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+#titulo-conte3{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+@media screen and (max-width:1000px) {
+    .card2{
+        flex-direction: column; 
+    }
+    .conteudo2{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    #titulo{
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+    #subtitulo{
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+    #titulo3grau{
+        font-size: 14px;
+        text-align: center;
+        color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    .card3{
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .card2{
+        flex-direction: column; 
+    }
+    .conteudo2{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    #titulo-conte3{
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+    #subtitulo-conte3{
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+    #titulo3grau{
+        font-size: 14px;
+        text-align: center;
+        color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    .card1{
+        max-width: 900px;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #tv{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    
+    }
+    .logo{
+        margin-left: 0px;
+    }
+
+}
+

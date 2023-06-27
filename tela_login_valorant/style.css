@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex: 1;
+}
+.logo{
+    width: 110px;
+}
+.container form{
+    height: 100%;
+    width: 400px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    gap: 15px;
+}
+.container form .prenchimento{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.container form .prenchimento input{
+    width: 100%;
+    padding: 1rem ;
+    border: none;
+    background-color:rgba(128, 128, 128, 0.171);
+    border-radius: 4px;
+    outline: none;
+}
+.container form .prenchimento input::placeholder{
+    color: rgba(128, 128, 128, 0.589);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+}
+.container form .prenchimento h1{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.container form .table_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.container form .table_btn button{
+    width: 100px;
+    padding: 0.1rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container form .table_btn button i{
+    font-size: 16px;
+}
+.container form .table_btn button:nth-child(1){
+    background-color: #1B74E4;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    color: #f2f2f2;
+}
+.container form .table_btn button:nth-child(2){
+    background-color: #f2f2f2;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+}
+.container form .table_btn button:nth-child(3){
+    background-color: black;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    color: #f2f2f2;
+}
+.container img{
+    width: 100%;
+}
+.check-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.check-box input{
+    background-color:rgba(128, 128, 128, 0.171);
+    color:rgba(128, 128, 128, 0.171) ;
+}
+.img_proximo button{
+    height: 60px;
+    width: 60px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+    cursor: pointer;
+    background-color: #e4364a;
+}
+.img_proximo button:disabled{
+    color:rgba(128, 128, 128, 0.171) ;
+    border: 2px solid rgba(128, 128, 128, 0.192); 
+    background-color: inherit;
+}
+
+.img_proximo button i{
+    font-size: 35px;
+    color:  rgba(128, 128, 128, 0.192);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+footer .links a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer .links  p{
+    font-size: 10px;
+    position: relative;
+    left: 150px;
+    top: -17px;
+    font-weight: 600;
+    color: grey;
+}
+#btn_inicar{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #d84254a6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.5rem;
+    width: 180px;
+    height: 60px;
+}
+#btn_inicar .hide{
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+#btn_inicar .hide_red{
+    border: 4px solid #d84254a6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#btn_inicar .hide_red_2{
+    border: 3px solid #ff0421;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: anima 1s infinite linear;
+}
+#btn_inicar  span{
+    left: 0;
+    margin-top: 1px;
+    margin-left: 26px;
+    font-weight: 700;
+    position: absolute;
+    color: #e4364a;
+}
+.info_donwload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    position: relative;
+    right: 15px;
+}
+.info_donwload h1{
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+.info_donwload h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(167, 166, 166);
+    filter: blur(0.5px);
+}
+#btn_conta{
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgba(88, 88, 88, 0.397);
+
+}
+#btn_conta i{
+    font-size: 30px;
+    color: grey;
+}
+.name_riot{
+    border-top: 3px solid ;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 0;
+    top:100px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-weight: 800;
+    font-size: 13px;
+    width: 50px;
+    color: #e4364a;
+}
+.name_riot span:nth-child(1){
+    margin-top: 15px;
+}
+.name_riot span{
+    letter-spacing: 2px;
+}
+@keyframes anima {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:632px) {
+    .container form{
+        
+        width: 100%;
+    }
+    #btn_inicar{
+        display: none;
+    }
+    .links{
+        z-index: 1;
+    }
+    .container form .table_btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .container form .table_btn button{
+        width:100%;
+        
+    }
+}

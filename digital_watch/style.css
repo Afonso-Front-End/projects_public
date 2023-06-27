@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #10101A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    color: #FDFDFD;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+main {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0.5rem;
+}
+.caixa {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    color: #FDFDFD;
+    position: relative;
+}
+.card {
+    width: 200px;
+
+}
+#hora, #minutos, #segundos {
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 4.5rem;
+   background-color: #2393F2;
+   font-weight: 200;
+}
+#minutos {
+    height: 180px;
+}
+#segundos {
+    height: 160px;
+    background-color: #FC006C;
+}
+.blue {
+    background-color: #2181d4;
+}
+.pink{
+    background-color: #FC006C;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.349);
+    height: 45px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.AM-PM {
+    background-color: #FDFDFD;
+    color: #10101A;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    
+}
+
+@media screen and (max-width:650px){
+    main {
+        width: 100%;
+    }
+    .caixa {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:450px){
+    .caixa {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}

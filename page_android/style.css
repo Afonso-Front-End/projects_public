@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@font-face {
+    font-family:'idroid' ;
+    src: url('../desafio04/fontes/idroid.otf') format('opentype'),
+    url('fontes/idroid.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+*{
+    margin: 0px;
+}
+.cabecalho{
+    background-image: linear-gradient(#4bd187de, #215036);
+    padding: 20px;
+}
+.cabecalho-titulo-principal{
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 4em;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+}
+.cabecalho-paragrafo{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    padding-top: 30px;
+    margin: 0px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    margin-left: -8px;
+}
+nav > a:hover{
+    color: #000000de;
+    background-color: #84E1AD;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.507);
+    transition: 0.1s;
+}
+.conteudo-principal{
+    background-color: #84E1AD;
+}
+main{
+    padding: 10px;
+    padding-top: 0px;
+}
+.conteudo{
+    background-color:white;
+    display: block;
+    height: 100%;
+    min-width:320px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow:  1px 3px 5px black;
+}
+.conteudo-titulo{
+    font-family: 'idroid';
+    color: #2c6847;
+    padding: 20px;
+    font-size: 2em;
+}
+.conteudo-subtitulo{
+    background-image: linear-gradient(to right, #84E1AD, white );
+    padding: 6px;
+    color:#326e4d;
+    margin: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'idroid';
+}
+.conteudo-paragrafo{
+    text-align: justify;
+    text-indent:20px ;
+    margin: 20px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-weight: normal;
+}
+strong{
+    background-color: #84E1AD;
+    padding: 4px;
+}
+strong > a{
+    text-decoration: none;
+}
+strong > a::after{
+    content: '🔗';
+}
+div{
+    padding: 20px;
+    background-color: #215036;
+}
+img{
+    width: 100%;
+    
+}
+.imagen-bugdroid{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.video-youtube{
+    width: 100%;
+}
+.conteudo-artigo{
+    height: 100%;
+    min-width:320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color:white ;
+    border: 0px;
+    box-shadow:  1px 3px 5px black;
+}
+.artigo{
+    background-color: #84E1AD;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.titulo-do-arquivo{
+    font-size: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #469e6d;
+    padding: 20px;
+    color: white;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-weight: normal;
+}
+.lista{
+    columns: 2;
+    list-style-position: inside;
+    padding: 10px;
+}
+
+.rodape{
+    padding: 5px;
+    box-sizing: 0px;
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou' ;
+    background-color: #326e4d;
+    color: white;
+    font-size: 20px;
+}
+.rodape-paragrafo{
+    margin-bottom: 0px;
+}
+
+

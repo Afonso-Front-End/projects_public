@@ -1,0 +1,62 @@
+@media (max-width: 830px) {
+  body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .area-login {
+    width: 100%;
+  }
+
+  h1 {
+    line-height: 60px;
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .area-botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="submit"],
+  .button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  nav{
+    flex-direction: column;
+    padding: 0.3rem 0rem;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+ul li button{
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+}
+}

@@ -1,0 +1,202 @@
+.tela{
+    width: 562px;
+    height: 100%;
+    background-color: #323639;
+    position: absolute;
+    left: 119px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: all 1s
+}
+.tela-animation{
+    transition: all 2s 2s;
+    width: 0px;
+}
+.div-corte{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 22px;
+
+}
+.corte{
+    width: 10px;
+    height: 12px;
+    background-color: #FFFF9D;
+    border-bottom-right-radius: 15px;
+    z-index: 199;
+    left: 0.4px;
+    position: relative;
+    z-index: 0;
+}
+.corte2{
+    width: 10px;
+    height: 12px;
+    background-color: #FFFF9D;
+    border-bottom-left-radius: 15px;
+    z-index: 0;
+}
+.corte::after{
+    
+}
+.borda-tela{
+    width: 785px;
+    height: 320px;
+    border-top: 4px solid #f2f2f2;
+    border-left: 3px solid black;
+    border-right: 5px solid #f51808;
+    border-bottom: 3px solid black;
+    z-index: 1;
+    top: 0;
+    margin-top: 5px;
+    filter: blur( 5px);
+    border-top-right-radius:50px ;
+    border-top-left-radius:50px ;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px ;
+    margin-left: 5px;
+
+}
+.tela-secundaria{
+    width: 520px;
+    height: 300px;
+    position: absolute;
+    top: 22px;
+    border-radius: 10px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+.tela-secundaria-animation{
+    width: 0;
+    transition: all 2s 2s;
+}
+
+.tela-principal{
+    width: 440px;
+    height: 250px;
+    background-color: #2C2D2F;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem 0.5rem;
+    overflow: hidden;
+    cursor: none;
+    background-image:linear-gradient(rgb(0,0,0,0.255),rgba(0,0,0,0.255)), url('https://observatoriodegames.uol.com.br/wp-content/uploads/2022/06/Nintendo-Switch-Online.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tela-principal-animation{
+    width: 0px;
+    transition: all 2s 2s;
+}
+.borda-top-tela{
+    border-top: 3px solid #f1f1ff;
+    width: 100%;
+    position: absolute;
+    top: 7px;
+    filter: blur(6px);
+}
+.borda-bottom-tela{
+    border-top: 3px solid black;
+    width: 100%;
+    position: relative;
+    top: 7px;
+    filter: blur(4px);
+    top: -4px;
+    z-index: 1;
+   
+}
+.encaixe{
+    position: absolute;
+    width: 580px;
+    height: 230px;
+    background-color: black;
+    top: 50px;
+    z-index: 0;
+    left: 110px;
+    border-radius: 5px;
+    transition: all 1s
+}
+.encaixe-animation{
+    width: 0;
+    transition: all 2s 2s;
+}
+.detalhe{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem ;
+    align-items: flex-end;
+}
+.detalhe-animation{
+    width: 0;
+    transition: all 2s 2s;
+}
+.detalhe-D{
+    width: 25px;
+    height: 4px;
+    position: relative;
+    background-color: #222527;
+    display: flex;
+    
+}
+.detalhe-DB{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    background-color: #222527;
+    left: -120px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+
+
+
+
+.tela-de-comandos{
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 160px;
+}
+.tela-principal .seta-baixo-direito-comando{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #414044;
+    border-top: 1px solid rgb(46, 45, 45);
+    border-right: 2px solid #04252D;
+    border-left: 2px solid #04252D;
+    border-bottom: 2px solid #04252D;
+    z-index: 3;
+    flex-wrap: nowrap;
+
+}
+.tela-de-comandos p{
+    font-size: 16px;
+}

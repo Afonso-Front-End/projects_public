@@ -1,0 +1,126 @@
+
+.card-play-musica{
+    top: 620px;/*620*/
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #202124;
+    transition: all 300ms ease;
+}
+.card-play-musica-open{
+    top: 0;
+    transition: all 300ms ease;
+}
+.card-play{
+    height: 650px;
+}
+.card-play-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+}
+.imgcard-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+.card-play-img img{
+    width: 250px;
+}
+.card-descricao{
+    margin-top: 10px;
+    line-height: 30px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.card-descricao h2{
+    color: #f1f1f1;
+    font-weight: 300;
+    font-size: 19px;
+    white-space: nowrap;
+}
+.card-descricao p{
+    color: grey;
+}
+.duration{
+    width: 250px;
+}
+.tempo-music{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.tempo-music p{
+    color: #f1f1f1;
+}
+.barra{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 6px;
+    width: 250px;
+}
+.ponto{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(2, 110, 252);
+}
+progress{
+    width: 0;
+    height: 6px;
+}
+.controls-play{
+    padding: 2rem;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(53, 50, 50);
+}
+.controls-play span{
+    font-size: 40px;
+}
+.menu-card-play{
+    border-bottom: 1px solid rgb(53, 50, 50);
+    padding: 0.3rem;
+    width: 100%;
+}
+.icon-card-menu{
+    display: flex;
+    justify-content: end;
+}
+.icon-card-menu span{
+    margin-right: 20px;
+    font-size: 35px;
+    
+}
+.icon-card-menu .para-baixo-menu-card-play{
+    display: none;
+}
+#pause{
+    display: none;
+}
+.play-controls{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
+.dados{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#favorite{
+    
+}
