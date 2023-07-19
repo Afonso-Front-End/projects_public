@@ -1,13 +1,15 @@
+const audio  = document.querySelector('audio')
+let fim = document.getElementById('fim')
 play = () => {
     audio.play()
-    pauser.style.display = 'block'
+    pauser.style.display = 'flex'
     player.style.display = 'none'
-}
+} 
 
 pause = () => {
     audio.pause()
     pauser.style.display = 'none'
-    player.style.display = 'block'
+    player.style.display = 'flex'
 }
 
 audio.addEventListener('timeupdate',()=>{
@@ -18,9 +20,9 @@ audio.addEventListener('timeupdate',()=>{
     fim.innerHTML = currentTimeMusic(Math.floor(audio.duration))
 })
 
-currentTimeMusic = (segundos) => {
-    let Minutos = Math.floor(segundos / 60)
-    let Segundos = segundos % 60
+currentTimeMusic = (event) => {
+    let Minutos = Math.floor(event / 60)
+    let Segundos = event % 60
     if(Segundos < 10){
         Segundos = '0' + Segundos
     }

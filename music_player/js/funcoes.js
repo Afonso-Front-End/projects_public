@@ -25,6 +25,7 @@ function playAutomatico(){
     musica.play()
 }
 //redenrizar musica
+
 let indexMusica = 0
 function renderizarMusica(index){
     musica.setAttribute('src', musicas[index].srcMusica)

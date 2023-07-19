@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     display: flex;
+    align-items: center;
     box-shadow: 0 0 5px rgb(61, 65, 73);
 }
 
@@ -35,6 +37,7 @@ body {
     width: 400px;
     height: 100%;
     background-color: #202020;
+    z-index: 1000;
 }
 
 .items {
@@ -87,11 +90,13 @@ body {
 
 .item-titulos h1 {
     color: #FDFDFD;
-    font-size: 20px;
+    font-size: 15px;
+    flex-wrap: nowrap;
 }
 
 .item-titulos p {
     color: #7f7f7f;
+    font-size: 12px;
 }
 
 .area-play {
@@ -101,10 +106,9 @@ body {
     align-items: center;
 }
 
-.area-play-img {
+#area-play-img {
     width: 800px;
     height: 400px;
-    background-image: url('/img/imagineDragons/imagine-dragons-01.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -112,12 +116,25 @@ body {
 
 .area-musica {
     padding: 1rem;
-    width: 100%;
+    width: calc(100% - 400px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
+    background-color: #2020209e;
 }
+
+/* .area-titulo {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f7f7f;
+    font-family: 'Poppins'; 
+} */
+
 
 .area-duration {
     height: 50px;
@@ -173,12 +190,24 @@ progress {
     border-radius: 30px;
 }
 
-.controls-play span {
-    font-size: 40px;
+.controls-play i {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    color: #454545;
+}
+.controls-play i:hover{
+    color: #262626;
 }
 
+
 .menu-card-play {
-    padding: 0.3rem;
     width: 100%;
 }
 
@@ -205,10 +234,4 @@ progress {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-}
-
-.play-controls span {
-    border-radius: 50%;
-    color: #585858;
-    cursor: pointer;
 }

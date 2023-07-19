@@ -41,7 +41,7 @@ play.addEventListener('click',()=>{
 //pause da musica
 pause.addEventListener('click', ()=>{
     addPlay()
-    musica.pause()
+    musica.pause() 
 })
 
 //verificar tamanho da musica e atualizar a barra progress
@@ -61,6 +61,7 @@ barra.addEventListener('click',(evente)=>{
     musica.play()
     addPause()
 })
+
 proxima.addEventListener('click',()=>{
     indexMusica++
     if(indexMusica > 16){
@@ -70,6 +71,7 @@ proxima.addEventListener('click',()=>{
     addPause()
     renderizarMusica(indexMusica)
 })
+
 voltar.addEventListener('click',()=>{
     indexMusica--
     if(indexMusica < 0){
