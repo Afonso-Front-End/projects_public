@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.container,
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #000000d8;
+    padding: 1rem;
+}
+
+.content {
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 5px rgb(61, 65, 73);
+}
+
+.area-select-music {
+    width: 400px;
+    height: 100%;
+    background-color: #202020;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.items::-webkit-scrollbar {
+    width: 9px;
+    background-color: #7676762c;
+}
+
+.items::-webkit-scrollbar-thumb {
+    background-color: #454545;
+    border-radius: 30px;
+}
+
+#item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#item:hover {
+    background-color: #262626;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.item-img {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+.item-titulos {
+    font-family: 'Poppins';
+}
+
+.item-titulos h1 {
+    color: #FDFDFD;
+    font-size: 20px;
+}
+
+.item-titulos p {
+    color: #7f7f7f;
+}
+
+.area-play {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-play-img {
+    width: 800px;
+    height: 400px;
+    background-image: url('/img/imagineDragons/imagine-dragons-01.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.area-musica {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-duration {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.duration {
+    width: 800px;
+}
+
+.tempo-music {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.tempo-music p {
+    color: #f1f1f1;
+}
+
+.barra {
+    border: 1px solid rgba(63, 63, 63, 0.631);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 6px;
+    width: 800px;
+    background-color: #454545;
+}
+
+.ponto {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FDFDFD;
+}
+
+progress {
+    width: 0;
+    height: 6px;
+}
+
+.controls-play {
+    padding: 2rem;
+    height: 30px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+}
+
+.controls-play span {
+    font-size: 40px;
+}
+
+.menu-card-play {
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.icon-card-menu {
+    display: flex;
+    justify-content: end;
+}
+
+.icon-card-menu span {
+    margin-right: 20px;
+    font-size: 35px;
+}
+
+.icon-card-menu .para-baixo-menu-card-play {
+    display: none;
+}
+
+#pauser {
+    display: none;
+}
+
+.play-controls {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.play-controls span {
+    border-radius: 50%;
+    color: #585858;
+    cursor: pointer;
+}
