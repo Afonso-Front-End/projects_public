@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="music-play/style/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -23,36 +23,42 @@
             </div>
 
             <div class="area-musica">
-                <!-- <div class="area-titulo">
-                    <h1 id="nomeMusica">Titulo</h1>
-                    <p id="nomeArtista">paragrafo</p>
-                </div> -->
-                <div class="area-play">
-                    <div class="area-play-img" id="area-play-img"></div>
+                <div class="menu" onclick="openMenu()">
+                    <button>
+                        <span></span>
+                    </button>
                 </div>
-
-                <div class="area-duration">
-                    <div class="duration">
-                        <div class="barra">
-                            <progress value="0" max="1"></progress>
-                            <div class="ponto"></div>
+                <div class="area">
+                    <div class="area-play">
+                        <div class="area-play-img" id="area-play-img"></div>
+                    </div>
+                    <div class="area-titulo">
+                        <p id="nomeMusica">Titulo</p>
+                        <p id="nomeArtista">paragrafo</p>
+                    </div>
+                    <div class="area-duration">
+                        <div class="duration">
+                            <div class="barra" id="barra">
+                                <progress value="0" max="1"></progress>
+                                <div class="ponto" id="ponto"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tempo-music">
-                    <p id="inicio">0:00</p>
-                    <p id="fim">0:00</p>
-                </div>
-
-                <div class="controls-play">
-                    <div class="play-controls">
-                        <i class="bi bi-skip-start-fill" id="voltar" onclick="voltar()"></i>
-                        <div class="play-pause">
-                            <i class="bi bi-play-fill" id="player" onclick="play()"></i>
-                            <i class="bi bi-pause-fill" id="pauser"  onclick="pause()"></i>
+    
+                    <div class="tempo-music">
+                        <p id="inicio">0:00</p>
+                        <p id="fim">0:00</p>
+                    </div>
+    
+                    <div class="controls-play">
+                        <div class="play-controls">
+                            <i class="bi bi-skip-start-fill" id="voltar" onclick="voltar()"></i>
+                            <div class="play-pause">
+                                <i class="bi bi-play-fill" id="player" onclick="play()"></i>
+                                <i class="bi bi-pause-fill" id="pauser"  onclick="pause()"></i>
+                            </div>
+                            <i class="bi bi-skip-end-fill" id="proxima" onclick="proximo()"></i>
                         </div>
-                        <i class="bi bi-skip-end-fill" id="proxima" onclick="proximo()"></i>
                     </div>
                 </div>
             </div>
@@ -60,8 +66,10 @@
     </div>
 
     <audio id="audio" src=""></audio>
-    <script src="/js/play.js"></script>
-    <script src="/js/select.js"></script>
+    <script src="music-play/js/array.js"></script>
+    <script src="music-play/js/play.js"></script>
+    <script src="music-play/js/select.js"></script>
+    <script src="music-play/js/script.js"></script>
 </body>
 
 </html>

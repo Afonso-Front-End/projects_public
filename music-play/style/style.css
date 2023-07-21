@@ -31,20 +31,21 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0 0 5px rgb(61, 65, 73);
+    position: relative; 
 }
 
 .area-select-music {
-    width: 400px;
     height: 100%;
     background-color: #202020;
     z-index: 1000;
 }
 
 .items {
-    width: 100%;
+    width: 400px;
     height: 100%;
     overflow-y: auto;
-    padding: 1rem;
+    overflow-x: hidden;
+    transition: all 0.5s;
 }
 
 .items::-webkit-scrollbar {
@@ -63,6 +64,8 @@ body {
     gap: 10px;
     margin-top: 10px;
     cursor: pointer;
+    padding: 0.5rem;
+    width: 350px;
 }
 
 #item:hover {
@@ -81,7 +84,7 @@ body {
 }
 
 .item-img img {
-    width: 100%;
+    width: 100px;
 }
 
 .item-titulos {
@@ -97,8 +100,13 @@ body {
 .item-titulos p {
     color: #7f7f7f;
     font-size: 12px;
+    flex-wrap: nowrap;
 }
-
+.area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .area-play {
     width: 100%;
     display: flex;
@@ -126,14 +134,14 @@ body {
     background-color: #2020209e;
 }
 
-/* .area-titulo {
+.area-titulo {
     width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #7f7f7f;
     font-family: 'Poppins'; 
-} */
+}
 
 
 .area-duration {
@@ -234,4 +242,81 @@ progress {
     width: 100%;
     align-items: center;
     justify-content: space-around;
+}
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 20000;
+}
+.menu button { 
+    align-items: center;
+    justify-content: center; 
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+.menu button span::before,
+.menu button span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-top: 2px solid #FDFDFD;
+}
+.menu button span::after {
+    margin-top: 3px;
+}
+
+@media screen and (max-width:1230px) {
+    .items {
+        width: 0px;
+    }
+    .area-musica {
+        width: calc(100%);
+        position: absolute;
+    }
+    .menu {
+        display: flex;
+    }
+    .items.active {
+        width: 400px;
+    }
+    
+    
+}
+@media screen and (max-width:870px) {
+    .area {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .area-musica {
+        padding: 1rem;
+    }
+    #area-play-img {
+        width: 100%;
+    }
+    .barra {
+        width: 100%;
+    }
+    .duration {
+        width: 100%;
+    }
+    .tempo-music {
+        width: 100%;
+    }
+    .controls-play {
+        width: 100%;
+    }
+   
 }
