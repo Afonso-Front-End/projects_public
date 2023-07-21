@@ -320,3 +320,11 @@ progress {
     }
    
 }
+@media screen and (max-width:400px) {
+    .container{
+        padding: 0;
+    }
+    .content {
+        border-radius: 0;
+    }
+}
