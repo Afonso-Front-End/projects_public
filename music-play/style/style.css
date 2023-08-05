@@ -117,7 +117,7 @@ body {
 #area-play-img {
     width: 800px;
     height: 400px;
-    background-position: center;
+    background-position: center, 100%;
     background-size: cover;
     border-radius: 10px;
 }
