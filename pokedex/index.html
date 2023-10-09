@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de pokemon</title>
+
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <menu>
+            <button onclick="openMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF4655" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+        </menu>
+        <header>
+            <nav>
+                <ul id="menu-lista">
+                    <li>
+                        <button id="btnMenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                              </svg>
+                            <a onclick="reload()" id="home">Reload</a>
+                        </button>
+                    </li>
+
+                    <li id="geracoes">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+                                <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+                                <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+                              </svg>
+                            <a onclick="openLista()">Geracoes</a>
+                        </button>
+
+                        <ul id="listaGeracao">
+                            <li><button id="kanto-button">Kanto</button></li>
+                            <li><button id="johto-button" onclick="johto()">Johto</button></li>
+                            <li><button id="hoenn-button" onclick="hoenn()">Hoenn</button></li>
+                            <li><button id="sinnoh-button" onclick="sinnoh()">Sinnoh</button></li>
+                            <li><button id="unova-button" onclick="unova()">Unova</button></li>
+                            <li><button id="kalos-button" onclick="kalos()">Kalos</button></li>
+                            <li><button id="alola-button" onclick="alola()">Alola</button></li>
+                            <li><button id="galar-button" onclick="galar()">Galar</button></li>
+                            <li><button id="paldea-button" onclick="paldea()">Paldea</button></li>
+                        </ul>
+                    </li>
+                        <!-- <li>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                <a>Sobre</a>
+                            </button>
+                        </li> -->
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <main>
+                <div class="loader-container" id="loaderContainer">
+                    <div class="loader">
+                        <img src="/img/cinema.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="container-modal">
+                   <button onclick="exite()">
+                        fechar
+                   </button>
+                </div>
+                <div class="contain-lupa">
+                    <div id="lupa">
+                        <input type="text" id="pesquisa">
+                        <div id="lupaPesquisar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="" height="" fill="#FDFDFD" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-contain">
+                    <ul id="result-list">
+
+                    </ul>
+                    <ul id="result-pesquisa">
+                        <div id="list-pesquisa">
+                            
+                        </div>
+                        <div class="btns">
+                            <button id="limpar">limpar</button>
+                            <button id="fechar">fechar</button>
+                        </div>
+                    </ul>
+                    <div class="container-cards">
+
+                    </div>
+                    <button id="ver-mais-btn" >Ver mais</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/kanto1.js"></script>
+    <script src="js/johto2.js"></script>
+    <script src="js/hoenn3.js"></script>
+    <script src="js/sinnoh4.js"></script>
+    <script src="js/unova5.js"></script>
+    <script src="js/kalos6.js"></script>
+    <script src="js/alola7.js"></script>
+    <script src="js/galar8.js"></script>
+    <script src="js/paldea9.js"></script>
+    <script src="js/pesquisa.js"></script>
+</body>
+
+</html>

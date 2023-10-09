@@ -6,7 +6,7 @@
     header nav .area-acout ul li:nth-child(1),
     header nav .menu ul,
     header nav .area-acout ul li:nth-child(2) {
-        display: none;
+        display: block;
     }
     header nav .area-acout ul li:nth-child(3) {
         background-color: rgba(128, 128, 128, 0.188);

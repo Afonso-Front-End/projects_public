@@ -1,0 +1,429 @@
+.content {
+    width: calc(100% - 300px);
+    height: 100%;
+    transition: all 300ms linear;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.container-cards {
+    width: 1200px;
+    display: flex;
+    flex-wrap:wrap;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    gap: 45px;
+    display: none;
+}
+.card {
+    width: 300px;
+    height: 300px; 
+    background-color: #F2F2F2;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FDFDFD;
+    transition: all 1s linear;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4px;
+    position: relative;
+}
+.container-cards::-webkit-scrollbar{
+    width: 9px;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+}
+.container-cards::-webkit-scrollbar-thumb{
+    background-color: #FF4655;
+}
+.card:hover {
+    /* Estilos quando o mouse passa sobre o card */
+    /* transform: scale(1.03); Aumenta o tamanho do card em 5% */
+}
+.card-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+.card-enter.active {
+    opacity: 1;
+}
+.card #id {
+    font-family: 'pokemon';
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: rgba(128, 128, 128, 0.544);
+    z-index: 0;
+}
+
+.card .titulo h2{
+    text-transform: capitalize;
+    color: #313131;
+}
+.card .imagen img {
+    width: 122px;
+    user-select: none;
+    color: #f3f3f3;
+    z-index: 1;
+    position: relative;
+}
+
+.card .tipo-pokemon {
+    display: flex;
+    gap: 10px;
+
+}
+.card .tipo-pokemon p {
+    width: 90px;
+    border: none;
+    padding: 0.2rem 0;
+    border-radius: 4px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.white-text {
+    color: #FDFDFD;
+}
+
+.geracoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.geracoes button {
+    width: 100px;
+    padding: 0.4rem;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+.container-modal button{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+.container-modal button{
+    width: 100px;
+    background-color: #FF4655;
+    color: #F2F2F2;
+    font-weight: 800;
+    border-radius: 4px;
+}
+.container-modal button:hover{
+    transform: scale(1.02);
+}
+.container-modal {
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* backdrop-filter: blur(102px); */
+    z-index: 5;
+    transition: all 300ms linear;
+    background-color: #FDFDFD;
+    
+}
+.container-modal.active {
+    height: 100%;
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 20px;
+}
+.imgCardModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.imgCardModal img{
+    width: 360px; 
+}
+.detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% ;
+    gap: 20px;
+    text-transform: capitalize;
+    
+}
+.detalhes p{
+  padding: 0.7rem;
+  background-color: #FF4655;
+  color: #FDFDFD;
+  border-radius: 4px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.info p{
+    color: #FDFDFD;
+    font-weight: 200;
+    color: #313131;
+}
+#tituloCardModal {
+    font-family: 'pokemon';
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    color: #313131;
+}
+
+.evolucao {
+    text-align: center;
+} 
+.evolucao img{
+    width: 150px;
+}
+.evolucao p {
+    font-family: 'pokemon';
+    letter-spacing: 3px;
+    color: #313131;
+    text-transform: capitalize;
+}
+.cardEvolucoes {
+    display: flex;
+    gap: 30px;
+}
+
+.loader-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.container-evolucao {
+    width: 1200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+}
+
+.evolution img {
+    width: 200px;
+}
+.contain-lupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#lupa {
+    width: 1200px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#lupaPesquisar {
+    cursor: pointer;
+}
+#lupa input{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 0 0.7rem 0.3rem;
+    border: none;
+    outline: none;
+  
+}
+#lupa div{
+   display: flex;
+}
+#lupa div svg{
+    width: 50px;
+    height: 40px;
+    background-color: #FF4655;
+    padding: 0.3rem;
+}
+
+#list-pesquisa{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap-reverse;
+}
+
+
+#result-pesquisa::-webkit-scrollbar{
+    width: 9px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+}
+#result-pesquisa::-webkit-scrollbar-thumb{
+    background-color: #FF4655;
+}
+#result-pesquisa {
+    width: 1200px;
+    color: #313131;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#result-pesquisa.active {
+    height: 100vh;
+    overflow-y: auto;
+    opacity: 1;
+}
+
+#result-list {
+   width: 1200px;
+   color: #313131;
+   height: 0;
+   overflow: hidden;
+   transition: all 0.5s ease-in-out;
+   background-color: #FDFDFD;
+}
+#result-list.active {
+   height: auto;
+   overflow-y: auto;
+   height: 100vh;
+   position: relative;
+   position: absolute;
+    z-index: 5;
+}
+#result-list::-webkit-scrollbar {
+    width: 9px;
+    background-color: #f3f3f3;
+  
+}
+#result-list::-webkit-scrollbar-thumb {
+    background-color: #FF4655;
+  
+}
+#result-list li {
+   padding: 0.5rem;
+   cursor: pointer;
+}
+#result-list li:hover {
+   background-color: #F3F3F3;
+}
+#ver-mais-btn {
+    width: 200px;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    color: #0A141E;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+.modal .coluna01{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.coluna01{
+    width: 1200px; 
+}
+.coluna01 .area-detalhe{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0.8rem;
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+.btns{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+.btns button{
+   width: 100px;
+   padding: 0.2rem 0;
+   border: none;
+   cursor: pointer;
+}
+
+.btns button:nth-child(1){
+   background-color: #313131;
+   color: #F3F3F3;
+}
+.btns button:nth-child(2){
+   background-color: #FF4655;
+   color: #F2F2F2;
+}
