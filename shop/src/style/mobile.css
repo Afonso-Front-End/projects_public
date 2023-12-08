@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px) {
+    #buttom-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 40px;
+        height: 40px;
+        gap: 6px;
+        background-color: transparent;
+        cursor: grab;
+    }
+
+    #buttom-menu span {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 2px;
+        border-top: 2px solid #000;
+        border-radius: 50px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #buttom-menu span:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    #buttom-menu:hover span:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    #buttom-menu:hover span:nth-child(1),
+    #buttom-menu:hover span:nth-child(3) {
+        margin-left: 15px;
+    }
+
+    .lista-nav-pai {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section-card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-coll-01 {
+        margin: 1.5rem;
+        width: 100%;
+    }
+    .content-main{
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 860px) {
+    /* .section-card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-coll-01 {
+        margin: 1.5rem;
+        width: 250px;
+    }
+    .card-coll-01 .card-title p:nth-child(1) {
+        font-size: 12px;
+    }    */
+}
+@media screen and (max-width: 740px) {
+    /* .section-card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-coll-01 {
+        margin: 1.5rem;
+        width: 180px;
+    }
+    .card-coll-01 .card-title p:nth-child(1) {
+        font-size: 12px;
+    }   
+    .card-coll-01 .card-title p:nth-child(1) {
+        font-size: 10px;
+    }    */
+}
+@media screen and (max-width: 460px) {
+    /* .content-main {
+        padding: 0rem;
+    } 
+    .card-coll-01 {
+        margin: 1.5rem;
+        width: 100%;
+    } */
+}

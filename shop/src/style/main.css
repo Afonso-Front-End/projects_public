@@ -1,0 +1,55 @@
+main {
+    min-height: 100vh;
+}
+.content-main {
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.section-card {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 4.5rem;
+}
+.card-coll-01 {
+    margin: 1.5rem;
+    width: 395px;
+    
+}
+.card-coll-01 .img-card-card-coll-01 img{
+    width: 100%;
+}
+.card-coll-01 .card-title p:nth-child(1){
+    font-size: 14px;
+}
+.card-coll-01 .card-title p:nth-child(2){
+    font-size: 14px;
+    color: gray;
+}
+
+/* ------------------- */
+
+.card-coll-02 {
+    margin: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.img-card-coll-02 img{
+    width: 100%;
+    height: 100%;
+}
+.card-coll-02 .card-title p:nth-child(1){
+    font-size: 14px;
+}
+.card-coll-02 .card-title p:nth-child(2){
+    font-size: 14px;
+    color: gray;
+}
+
+.card-title {
+    /* background-color: red; */
+}
