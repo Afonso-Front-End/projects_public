@@ -138,3 +138,10 @@
 .card-modall-img-09 img {
     width: 100%;
 }   
+
+/* footer */
+
+footer {
+    border-top: 1px solid rgba(128, 128, 128, 0.183);
+    margin: 0.1rem 1.5rem;
+}

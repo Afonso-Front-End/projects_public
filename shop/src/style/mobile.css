@@ -54,12 +54,16 @@
         width: 35px;
         height: 2px;
         border-top: 2px solid #000;
-        border-radius: 50px;
+        border-radius: 100px;
         transition: 0.3s ease-in-out;
     }
 
     #buttom-menu span:nth-child(2) {
         margin-left: 15px;
+        border-top: 2px solid #00000077;
+    }
+    #buttom-menu span:nth-child(3) {
+        border-top: 2px solid #0000009d;
     }
 
     #buttom-menu:hover span:nth-child(2) {
