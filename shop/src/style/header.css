@@ -1,30 +1,22 @@
-.topo {
+.container-topo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.content-topo {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2.5rem 0rem;
-    padding: 0 5.8rem;
+    padding:1.5rem;
 }
-
-.logo a{
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 17px;
-}
-.lista-nav-pai {
+.lista-nav {
     display: flex;
-    gap: 50px;
-}
-.lista-nav-filho {
-    display: flex;
+    align-items: center;
     gap: 30px;
 }
-.lista-nav-filho a {
+.logo , .logo a{
+    text-transform: uppercase;
     color: #000;
-    text-transform: capitalize;
-    font-size: 15px;
-}
-#buttom-menu {
-    display: none
+    font-weight: 500;
 }

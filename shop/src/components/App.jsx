@@ -50,20 +50,153 @@ export default function App() {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_02_img_01", {
+        gsap.to(".img_coll_02", {
             y: 0,
             opacity: 1,
-                scrollTrigger: {
-                    trigger: '.modall-02',
-                    markers: true,
-                    start: 'top 500px',
-                    end: 'bottom 600px',
-                    scrub: true     
-                }
+            scrollTrigger: {
+                trigger: '.modall-02',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_02_img_01')
+            gsap.killTweensOf('.img_coll_02')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_03", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-03',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_03')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_04", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-04',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_04')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_05", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-05',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_05')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_06", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-06',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_06')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_07", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-07',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_07')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_08", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-08',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_08')
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_09", {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.modall-09',
+                // markers: true,
+                start: 'top 500px',
+                end: 'bottom 500px',
+                scrub: 0.6
+            }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_09')
         }
     }, [])
 
@@ -73,39 +206,38 @@ export default function App() {
 
                 <div className='container-topo'>
                     <div className='content-topo'>
-                        <div className='topo'>
-                            <div className="logo">
-                                <a href="#">shope - ecommerce</a>
-                            </div>
-                            <button id='buttom-menu'>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                            <ul className="lista-nav-pai">
-                                <ul className="lista-nav-filho">
-                                    <li>
-                                        <a href="#">
-                                            <img src={iconPerson} alt="" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src={iconSearch} alt="" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src={iconBag} alt="" /></a>
-                                    </li>
-                                </ul>
-
-                            </ul>
+                        
+                        <div className="logo">
+                            <a href="#">shope - ecommerce</a>
                         </div>
+
+                        <button id='buttom-menu'>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <ul className="lista-nav">
+                            <li>
+                                <a href="#">
+                                    <img src={iconPerson} alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src={iconSearch} alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src={iconBag} alt="" /></a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 
-                <section className='section-card coll-01' id='modall-01'>
+                <section className='section-card coll-01 modall-01'>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
+                        <div className='img-card-01'>
                             <img src={img_coll_01_img_01} alt="" className='' />
                         </div>
                         <div className="card-title">
@@ -115,7 +247,7 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
+                        <div className='img-card-01'>
                             <img src={img_coll_01_img_02} alt="" />
                         </div>
                         <div className="card-title">
@@ -125,7 +257,7 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
+                        <div className='img-card-01'>
                             <img src={img_coll_01_img_03} alt="" />
                         </div>
                         <div className="card-title">
@@ -135,7 +267,7 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
+                        <div className='img-card-01'>
                             <img src={img_coll_01_img_04} alt="" />
                         </div>
                         <div className="card-title">
@@ -150,7 +282,7 @@ export default function App() {
 
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_02_img_01} alt="" className='img_coll_02_img_01'/>
+                            <img src={img_coll_02_img_01} alt="" className='img_coll_02' />
                         </div>
                         <div className="card-title">
                             <p>Womb Chair & Ottoman in Dijon Yellow</p>
@@ -159,7 +291,7 @@ export default function App() {
                     </div>
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_02_img_02} alt="" className='img_coll_02_img_01'/>
+                            <img src={img_coll_02_img_02} alt="" className='img_coll_02' />
                         </div>
                         <div className="card-title">
                             <p>Rise Bookstand by Sun at Six</p>
@@ -169,11 +301,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01' id='modall-03'>
+                <section className='section-card coll-01 modall-03'>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_03_img_01} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_03_img_01} alt="" className='img_coll_03' />
                         </div>
                         <div className="card-title">
                             <p>Grove Cat Tower (Ash)</p>
@@ -182,8 +314,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_03_img_02} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_03_img_02} alt="" className='img_coll_03' />
                         </div>
                         <div className="card-title">
                             <p>Splat Side Table by Sophie Collé</p>
@@ -192,8 +324,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_03_img_03} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_03_img_03} alt="" className='img_coll_03' />
                         </div>
                         <div className="card-title">
                             <p>Afternoon Coat Hanger by Menu</p>
@@ -202,8 +334,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_03_img_04} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_03_img_04} alt="" className='img_coll_03' />
                         </div>
                         <div className="card-title">
                             <p>Great Fellow Kettle by Great Jones</p>
@@ -213,11 +345,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02' id='modall-04'>
+                <section className='section-card coll-02 modall-04'>
 
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_04_img_01} alt="" />
+                            <img src={img_coll_04_img_01} alt="" className='img_coll_04' />
                         </div>
                         <div className="card-title">
                             <p>Abstract Wall Clocks by Pat Kim</p>
@@ -226,7 +358,7 @@ export default function App() {
                     </div>
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_04_img_02} alt="" />
+                            <img src={img_coll_04_img_02} alt="" className='img_coll_04' />
                         </div>
                         <div className="card-title">
                             <p>Grupa: Arigato Desk Lamp</p>
@@ -236,11 +368,10 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01' id='modall-05'>
-
+                <section className='section-card coll-01 modall-05'>
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_05_img_01} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_05_img_01} alt="" className='img_coll_05' />
                         </div>
                         <div className="card-title">
                             <p>Soma Pitcher Plant-Based Filtration</p>
@@ -249,8 +380,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_05_img_02} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_05_img_02} alt="" className='img_coll_05' />
                         </div>
                         <div className="card-title">
                             <p>Poketo Quarterly Goal Planner</p>
@@ -259,8 +390,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_05_img_03} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_05_img_03} alt="" className='img_coll_05' />
                         </div>
                         <div className="card-title">
                             <p>AÃRK Collective Multi Watch</p>
@@ -269,8 +400,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_05_img_04} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_05_img_04} alt="" className='img_coll_05' />
                         </div>
                         <div className="card-title">
                             <p>AARKE Sparkling Water Maker</p>
@@ -280,11 +411,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02' id='modall-06'>
+                <section className='section-card coll-02 modall-06'>
 
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_06_img_01} alt="" />
+                            <img src={img_coll_06_img_01} alt="" className='img_coll_06' />
                         </div>
                         <div className="card-title">
                             <p>Breville Barista Espresso Machine</p>
@@ -293,7 +424,7 @@ export default function App() {
                     </div>
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_06_img_02} alt="" />
+                            <img src={img_coll_06_img_02} alt="" className='img_coll_06' />
                         </div>
                         <div className="card-title">
                             <p>Breville Barista Espresso Machine</p>
@@ -303,11 +434,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01' id='modall-07'>
+                <section className='section-card coll-01 modall-07'>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_07_img_01} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_07_img_01} alt="" className='img_coll_07' />
                         </div>
                         <div className="card-title">
                             <p>The Monocle Guide to Better Living </p>
@@ -316,8 +447,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_07_img_02} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_07_img_02} alt="" className='img_coll_07' />
                         </div>
                         <div className="card-title">
                             <p>Best Friends Deep Dish Cuddler Bed </p>
@@ -326,8 +457,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_07_img_03} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_07_img_03} alt="" className='img_coll_07' />
                         </div>
                         <div className="card-title">
                             <p>Accident by HeyShop </p>
@@ -336,8 +467,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_07_img_04} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_07_img_04} alt="" className='img_coll_07' />
                         </div>
                         <div className="card-title">
                             <p>Accident by HeyShop</p>
@@ -347,11 +478,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02' id='modall-08'>
+                <section className='section-card coll-02 modall-08'>
 
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_08_img_01} alt="" />
+                            <img src={img_coll_08_img_01} alt="" className='img_coll_08' />
                         </div>
                         <div className="card-title">
                             <p>Summer Print by Bratislav Milenkovic</p>
@@ -360,7 +491,7 @@ export default function App() {
                     </div>
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_08_img_02} alt="" />
+                            <img src={img_coll_08_img_02} alt="" className='img_coll_08' />
                         </div>
                         <div className="card-title">
                             <p>Jean Jullien Monograph by Phaidon</p>
@@ -370,11 +501,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01' id='modall-09'>
+                <section className='section-card coll-01 modall-09'>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_09_img_01} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_09_img_01} alt="" className='img_coll_09' />
                         </div>
                         <div className="card-title">
                             <p>Nathan Williams: The Eye </p>
@@ -383,8 +514,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_09_img_02} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_09_img_02} alt="" className='img_coll_09' />
                         </div>
                         <div className="card-title">
                             <p>Nathan Williams: The Eye </p>
@@ -393,8 +524,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_09_img_03} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_09_img_03} alt="" className='img_coll_09' />
                         </div>
                         <div className="card-title">
                             <p>Fujifilm Instax Mini 11 Camera </p>
@@ -403,8 +534,8 @@ export default function App() {
                     </div>
 
                     <div className="card-coll-01">
-                        <div className='img-card-card-coll-01'>
-                            <img src={img_coll_09_img_04} alt="" />
+                        <div className='img-card-01'>
+                            <img src={img_coll_09_img_04} alt="" className='img_coll_09' />
                         </div>
                         <div className="card-title">
                             <p>Menu Bottle Grinder</p>

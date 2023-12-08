@@ -1,3 +1,9 @@
+@media screen and (max-width: 1800px) {
+    .content {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #buttom-menu {
         display: flex;
@@ -35,12 +41,12 @@
         margin-left: 15px;
     }
 
-    .lista-nav-pai {
+    .lista-nav {
         display: none;
     }
 }
 @media screen and (max-width: 900px) {
-    .section-card{
+    /* .section-card{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -51,7 +57,7 @@
     }
     .content-main{
         padding: 0;
-    }
+    } */
     
 }
 @media screen and (max-width: 860px) {
