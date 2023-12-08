@@ -1,12 +1,11 @@
-header {
-    padding: 4rem 6rem;
-}
-nav{
-    width: 100%;
+.topo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2.5rem 0rem;
+    padding: 0 5.8rem;
 }
+
 .logo a{
     color: #000;
     text-transform: uppercase;
@@ -19,7 +18,7 @@ nav{
 }
 .lista-nav-filho {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 .lista-nav-filho a {
     color: #000;
