@@ -50,153 +50,153 @@ export default function App() {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_02", {
+        gsap.to(".card-modall-img-02", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-02',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 850px',
+                end: 'bottom 700px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_02')
+            gsap.killTweensOf('.card-modall-img-02')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_03", {
+        gsap.to(".card-modall-img-03", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-03',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_03')
+            gsap.killTweensOf('.card-modall-img-03')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_04", {
+        gsap.to(".card-modall-img-04", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-04',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_04')
+            gsap.killTweensOf('.card-modall-img-04')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_05", {
+        gsap.to(".card-modall-img-05", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-05',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_05')
+            gsap.killTweensOf('.card-modall-img-05')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_06", {
+        gsap.to(".card-modall-img-06", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-06',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_06')
+            gsap.killTweensOf('.card-modall-img-06')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_07", {
+        gsap.to(".card-modall-img-07", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-07',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_07')
+            gsap.killTweensOf('.card-modall-img-07')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_08", {
+        gsap.to(".card-modall-img-08", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-08',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_08')
+            gsap.killTweensOf('.card-modall-img-07')
         }
     }, [])
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".img_coll_09", {
+        gsap.to(".card-modall-img-09", {
             y: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '.modall-09',
                 // markers: true,
-                start: 'top 500px',
-                end: 'bottom 500px',
+                start: 'top 700px',
+                end: 'bottom 850px',
                 scrub: 0.6
             }
         })
 
         return () => {
-            gsap.killTweensOf('.img_coll_09')
+            gsap.killTweensOf('.card-modall-img-09')
         }
     }, [])
 
@@ -206,7 +206,7 @@ export default function App() {
 
                 <div className='container-topo'>
                     <div className='content-topo'>
-                        
+
                         <div className="logo">
                             <a href="#">shope - ecommerce</a>
                         </div>
@@ -234,66 +234,51 @@ export default function App() {
                     </div>
                 </div>
 
-                <section className='section-card coll-01 modall-01'>
-
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                <section className='modall-01'>
+                    <div className="card-modal-01">
+                        <div className='card-modal-img-01'>
                             <img src={img_coll_01_img_01} alt="" className='' />
-                        </div>
-                        <div className="card-title">
                             <p>Braun Classic Wall Clock</p>
                             <p>$54.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modal-01">
+                        <div className='card-modal-img-01'>
                             <img src={img_coll_01_img_02} alt="" />
-                        </div>
-                        <div className="card-title">
                             <p>Everybody Grinders by Dusen Dusen</p>
                             <p>$48.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modal-01">
+                        <div className='card-modal-img-01'>
                             <img src={img_coll_01_img_03} alt="" />
-                        </div>
-                        <div className="card-title">
                             <p>Strata Plant Vessel by Simone Brewster</p>
                             <p>$70.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modal-01">
+                        <div className='card-modal-img-01'>
                             <img src={img_coll_01_img_04} alt="" />
-                        </div>
-                        <div className="card-title">
                             <p>Poketo: Creative Spaces</p>
                             <p>$32.00</p>
                         </div>
                     </div>
-
                 </section>
 
-                <section className='section-card coll-02 modall-02' >
-
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                <section className='modall-02' >
+                    <div className="card-modall-02">
+                        <div className='card-modall-img-02'>
                             <img src={img_coll_02_img_01} alt="" className='img_coll_02' />
-                        </div>
-                        <div className="card-title">
                             <p>Womb Chair & Ottoman in Dijon Yellow</p>
                             <p>$1679.00</p>
                         </div>
                     </div>
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-02">
+                        <div className='card-modall-img-02'>
                             <img src={img_coll_02_img_02} alt="" className='img_coll_02' />
-                        </div>
-                        <div className="card-title">
                             <p>Rise Bookstand by Sun at Six</p>
                             <p>Sale - $129.99</p>
                         </div>
@@ -301,43 +286,35 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01 modall-03'>
+                <section className='modall-03'>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
-                            <img src={img_coll_03_img_01} alt="" className='img_coll_03' />
-                        </div>
-                        <div className="card-title">
+                    <div className="card-modall-03">
+                        <div className='card-modall-img-03'>
+                            <img src={img_coll_03_img_01} alt="" />
                             <p>Grove Cat Tower (Ash)</p>
                             <p>$499.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
-                            <img src={img_coll_03_img_02} alt="" className='img_coll_03' />
-                        </div>
-                        <div className="card-title">
+                    <div className="card-modall-03">
+                        <div className='card-modall-img-03'>
+                            <img src={img_coll_03_img_02} alt="" />
                             <p>Splat Side Table by Sophie Collé</p>
                             <p>$190.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
-                            <img src={img_coll_03_img_03} alt="" className='img_coll_03' />
-                        </div>
-                        <div className="card-title">
+                    <div className="card-modall-03">
+                        <div className='card-modall-img-03'>
+                            <img src={img_coll_03_img_03} alt="" />
                             <p>Afternoon Coat Hanger by Menu</p>
                             <p>$170.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
-                            <img src={img_coll_03_img_04} alt="" className='img_coll_03' />
-                        </div>
-                        <div className="card-title">
+                    <div className="card-modall-03">
+                        <div className='card-modall-img-03'>
+                            <img src={img_coll_03_img_04} alt="" />
                             <p>Great Fellow Kettle by Great Jones</p>
                             <p>$165.00</p>
                         </div>
@@ -345,22 +322,18 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02 modall-04'>
+                <section className='modall-04'>
 
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-04">
+                        <div className='card-modall-img-04'>
                             <img src={img_coll_04_img_01} alt="" className='img_coll_04' />
-                        </div>
-                        <div className="card-title">
                             <p>Abstract Wall Clocks by Pat Kim</p>
                             <p>$85.00</p>
                         </div>
                     </div>
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-04">
+                        <div className='card-modall-img-04'>
                             <img src={img_coll_04_img_02} alt="" className='img_coll_04' />
-                        </div>
-                        <div className="card-title">
                             <p>Grupa: Arigato Desk Lamp</p>
                             <p>From - $380.99</p>
                         </div>
@@ -368,109 +341,97 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-01 modall-05'>
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                <section className='modall-05'>
+                    <div className="card-modall-05">
+                        <div className='card-modall-img-05'>
                             <img src={img_coll_05_img_01} alt="" className='img_coll_05' />
-                        </div>
-                        <div className="card-title">
                             <p>Soma Pitcher Plant-Based Filtration</p>
                             <p>$39.00</p>
+
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-05">
+                        <div className='card-modall-img-05'>
                             <img src={img_coll_05_img_02} alt="" className='img_coll_05' />
-                        </div>
-                        <div className="card-title">
                             <p>Poketo Quarterly Goal Planner</p>
                             <p>$28.00</p>
+
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-05">
+                        <div className='card-modall-img-05'>
                             <img src={img_coll_05_img_03} alt="" className='img_coll_05' />
-                        </div>
-                        <div className="card-title">
-                            <p>AÃRK Collective Multi Watch</p>
-                            <p>$119.00</p>
+                            <div className="card-title">
+                                <p>AÃRK Collective Multi Watch</p>
+                                <p>$119.00</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-05">
+                        <div className='card-modall-img-05'>
                             <img src={img_coll_05_img_04} alt="" className='img_coll_05' />
-                        </div>
-                        <div className="card-title">
-                            <p>AARKE Sparkling Water Maker</p>
-                            <p>$229.00</p>
+                            <div className="card-title">
+                                <p>AARKE Sparkling Water Maker</p>
+                                <p>$229.00</p>
+                            </div>
                         </div>
                     </div>
 
                 </section>
 
-                <section className='section-card coll-02 modall-06'>
+                <section className='modall-06'>
 
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-06">
+                        <div className='card-modall-img-06'>
                             <img src={img_coll_06_img_01} alt="" className='img_coll_06' />
-                        </div>
-                        <div className="card-title">
                             <p>Breville Barista Espresso Machine</p>
                             <p>Sale $549.95</p>
+
                         </div>
                     </div>
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-06">
+                        <div className='card-modall-img-06'>
                             <img src={img_coll_06_img_02} alt="" className='img_coll_06' />
-                        </div>
-                        <div className="card-title">
                             <p>Breville Barista Espresso Machine</p>
                             <p>$149.99</p>
+
                         </div>
                     </div>
 
                 </section>
 
-                <section className='section-card coll-01 modall-07'>
+                <section className='modall-07'>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-07">
+                        <div className='card-modall-img-07'>
                             <img src={img_coll_07_img_01} alt="" className='img_coll_07' />
-                        </div>
-                        <div className="card-title">
                             <p>The Monocle Guide to Better Living </p>
                             <p>$40.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-07">
+                        <div className='card-modall-img-07'>
                             <img src={img_coll_07_img_02} alt="" className='img_coll_07' />
-                        </div>
-                        <div className="card-title">
                             <p>Best Friends Deep Dish Cuddler Bed </p>
                             <p>$39.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-07">
+                        <div className='card-modall-img-07'>
                             <img src={img_coll_07_img_03} alt="" className='img_coll_07' />
-                        </div>
-                        <div className="card-title">
                             <p>Accident by HeyShop </p>
                             <p>$44.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-07">
+                        <div className='card-modall-img-07'>
                             <img src={img_coll_07_img_04} alt="" className='img_coll_07' />
-                        </div>
-                        <div className="card-title">
                             <p>Accident by HeyShop</p>
                             <p>$499.00</p>
                         </div>
@@ -478,66 +439,56 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02 modall-08'>
+                <section className='modall-08'>
 
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-08">
+                        <div className='card-modall-img-08'>
                             <img src={img_coll_08_img_01} alt="" className='img_coll_08' />
-                        </div>
-                        <div className="card-title">
                             <p>Summer Print by Bratislav Milenkovic</p>
                             <p>$27.00</p>
+
                         </div>
                     </div>
-                    <div className="card-coll-02">
-                        <div className='img-card-coll-02'>
+                    <div className="card-modall-08">
+                        <div className='card-modall-img-08'>
                             <img src={img_coll_08_img_02} alt="" className='img_coll_08' />
-                        </div>
-                        <div className="card-title">
                             <p>Jean Jullien Monograph by Phaidon</p>
                             <p>$55.00</p>
+
                         </div>
                     </div>
 
                 </section>
 
-                <section className='section-card coll-01 modall-09'>
+                <section className='modall-09'>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-09">
+                        <div className='card-modall-img-09'>
                             <img src={img_coll_09_img_01} alt="" className='img_coll_09' />
-                        </div>
-                        <div className="card-title">
                             <p>Nathan Williams: The Eye </p>
                             <p>$41.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-09">
+                        <div className='card-modall-img-09'>
                             <img src={img_coll_09_img_02} alt="" className='img_coll_09' />
-                        </div>
-                        <div className="card-title">
                             <p>Nathan Williams: The Eye </p>
                             <p>$36.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-09">
+                        <div className='card-modall-img-09'>
                             <img src={img_coll_09_img_03} alt="" className='img_coll_09' />
-                        </div>
-                        <div className="card-title">
                             <p>Fujifilm Instax Mini 11 Camera </p>
                             <p>$72.00</p>
                         </div>
                     </div>
 
-                    <div className="card-coll-01">
-                        <div className='img-card-01'>
+                    <div className="card-modall-09">
+                        <div className='card-modall-img-09'>
                             <img src={img_coll_09_img_04} alt="" className='img_coll_09' />
-                        </div>
-                        <div className="card-title">
                             <p>Menu Bottle Grinder</p>
                             <p>$50.00</p>
                         </div>

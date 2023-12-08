@@ -1,35 +1,140 @@
 .container {
     width: 100%;
-}
-.content {
-    width: 1800px;
-}
-.section-card {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.card-coll-01 {
-    padding: 1.5rem;
-    width: 400px;
+
+.content {
+    width: 1800px;
+    margin: 4.5rem;
 }
 
-.img-card-01 img{
-    width: 100%;
-}
-
-
-.card-coll-02 {
+.modall-01,
+.modall-02,
+.modall-03,
+.modall-04,
+.modall-05,
+.modall-06,
+.modall-07,
+.modall-08,
+.modall-09 {
     display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
-.img-card-coll-02 {
+
+/* Modall 01 */
+.card-modal-01 {
+    margin: 1.5rem;
+    width: 400px;
+    font-size: 14px;
+}
+
+.card-modal-01 img {
     width: 100%;
 }
-.img-card-coll-02 img{
+
+/* Modall 02 */
+.card-modall-02 {
+    margin: 1.5rem;
+    font-size: 14px;
+}
+
+.card-modall-img-02 {
     width: 100%;
 }
-.card-title p:nth-child(2) {
-    color: gray;
+
+.card-modall-img-02 img {
+    width: 100%;
 }
+
+/* Modall 03 */
+.card-modall-03 {
+    margin: 1.5rem;
+    width: 400px;
+    font-size: 14px;
+   
+}
+
+.card-modall-img-03 img {
+    width: 100%;
+}
+
+/* Modall 04 */
+
+.card-modall-04 {
+    margin: 1.5rem;
+    font-size: 14px;
+}
+
+.card-modall-img-04 {
+    width: 100%;
+}
+
+.card-modall-img-04 img {
+    width: 100%;
+}
+
+/* Modall 05 */
+.card-modall-05 {
+    margin: 1.5rem;
+    width: 400px;
+    font-size: 14px;
+   
+}
+
+.card-modall-img-05 img {
+    width: 100%;
+}
+
+/* Modall 06 */
+.card-modall-06 {
+    margin: 1.5rem;
+    font-size: 14px;
+}
+
+.card-modall-img-06 {
+    width: 100%;
+}
+
+.card-modall-img-06 img {
+    width: 100%;
+}
+
+/* Modall 07 */
+.card-modall-07 {
+    margin: 1.5rem;
+    width: 400px;
+    font-size: 14px;
+   
+}
+
+.card-modall-img-07 img {
+    width: 100%;
+}
+
+/* Modall 08 */
+.card-modall-08 {
+    margin: 1.5rem;
+    font-size: 14px;
+}
+
+.card-modall-img-08 {
+    width: 100%;
+}
+
+.card-modall-img-08 img {
+    width: 100%;
+}
+/* Modall 09 */
+.card-modall-09 {
+    margin: 1.5rem;
+    width: 400px;
+    font-size: 14px;
+   
+}
+
+.card-modall-img-09 img {
+    width: 100%;
+}   
