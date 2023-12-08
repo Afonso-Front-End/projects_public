@@ -41,16 +41,31 @@ import iconPerson from '../assets/icons/person.svg'
 import iconSearch from '../assets/icons/search.svg'
 
 import { useLayoutEffect } from 'react'
-import {gsap} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 
 export default function App() {
 
-    useLayoutEffect(()=> {
-        // gsap.from
-    },[])
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".img_coll_02_img_01", {
+            y: 0,
+            opacity: 1,
+                scrollTrigger: {
+                    trigger: '.modall-02',
+                    markers: true,
+                    start: 'top 500px',
+                    end: 'bottom 600px',
+                    scrub: true     
+                }
+        })
+
+        return () => {
+            gsap.killTweensOf('.img_coll_02_img_01')
+        }
+    }, [])
 
     return (
         <div className="container">
@@ -81,11 +96,7 @@ export default function App() {
                                         <a href="#"><img src={iconBag} alt="" /></a>
                                     </li>
                                 </ul>
-                                {/* <span>|</span>
-                                <ul className="lista-nav-filho">
-                                    <li><a href="#">weekly picks</a></li>
-                                    <li><a href="#">the desing blog</a></li>
-                                </ul> */}
+
                             </ul>
                         </div>
                     </div>
@@ -95,7 +106,7 @@ export default function App() {
 
                     <div className="card-coll-01">
                         <div className='img-card-card-coll-01'>
-                            <img src={img_coll_01_img_01} alt="" />
+                            <img src={img_coll_01_img_01} alt="" className='' />
                         </div>
                         <div className="card-title">
                             <p>Braun Classic Wall Clock</p>
@@ -135,11 +146,11 @@ export default function App() {
 
                 </section>
 
-                <section className='section-card coll-02' id='modall-02'>
+                <section className='section-card coll-02 modall-02' >
 
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_02_img_01} alt="" />
+                            <img src={img_coll_02_img_01} alt="" className='img_coll_02_img_01'/>
                         </div>
                         <div className="card-title">
                             <p>Womb Chair & Ottoman in Dijon Yellow</p>
@@ -148,7 +159,7 @@ export default function App() {
                     </div>
                     <div className="card-coll-02">
                         <div className='img-card-coll-02'>
-                            <img src={img_coll_02_img_02} alt="" />
+                            <img src={img_coll_02_img_02} alt="" className='img_coll_02_img_01'/>
                         </div>
                         <div className="card-title">
                             <p>Rise Bookstand by Sun at Six</p>
