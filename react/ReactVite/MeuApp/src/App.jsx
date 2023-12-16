@@ -1,35 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { io } from "socket.io-client";
+import useScript from "../js/Script";
 
 function App() {
-  const [socket, setSocket] = useState(null);
-  const [messages, setMessages] = useState([]);
 
-  useEffect(() => {
-    const newSocket = io("http://localhost:4000");
-    setSocket(newSocket);
-    newSocket.on("message", (message) => {
-      setMessages((prevMessages) => [...prevMessages, message]);
-    });
-
-    return () => {
-      newSocket.disconnect();
-    };
-  }, []);
-
-  const sendMessage = (event) => {
-    event.preventDefault();
-    const input = document.getElementById("input");
-    const message = input.value;
-
-    if (socket) {
-      socket.emit("sendMessage", message);
-      console.log(message)
-    }
-
-    input.value = "";
-  };
-  console.log(messages)
+  const {messages, sendMessage} = useScript()
 
   return (
     <>
