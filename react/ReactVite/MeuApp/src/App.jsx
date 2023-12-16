@@ -1,8 +1,12 @@
 import useScript from "../js/Script";
 
+import useJwtToken from "../js/Jwt";
+
 function App() {
 
-  const {messages, sendMessage} = useScript()
+  const { messages, sendMessage } = useScript()
+  const { TOKEN , TOKENDECODIFICADO} = useJwtToken()
+
 
   return (
     <>
@@ -10,7 +14,7 @@ function App() {
         <div className="container-lista">
 
         </div>
-        
+
         <div className="container-chat">
           <ul id="messages">
             {messages.map((message, index) => (
