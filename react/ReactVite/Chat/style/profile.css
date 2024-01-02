@@ -1,0 +1,131 @@
+.profile {
+    position: relative;
+}
+
+.profile-data {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #cffccf1a;
+    color: #CFFCCF;
+    z-index: 1;
+}
+
+.profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+    cursor: grab;
+}
+
+.profile_img img {
+    height: 50px;
+    /* border-radius: 50%; */
+}
+
+/*  */
+.profile_data {
+    height: 50px;
+    letter-spacing: 0.5px;
+}
+
+.profile_data p:nth-child(1) {
+    font-weight: 500;
+
+}
+
+.profile_data p:nth-child(2) {
+    font-weight: 200;
+    color: #FFF;
+}
+
+/* profile-config */
+.profile-config {
+    width: 300px;
+    height: 350px;
+    /* background-color: #333333ef; */
+    background-color: #333333;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 0px;
+    border-radius: 5px;
+    border-top: 1px solid #cffccf12;
+    /* border-left: 1px solid #cffccf1d; */
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.profile-config:hover {
+    /* background-color: #333333; */
+    z-index: 1;
+    /* border-left: 1px solid #cffccf1d; */
+}
+
+.profile-config button {
+    display: flex;
+    align-items: center;
+    background-color: #272626;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 4px;
+    gap: 4px;
+    /* border: 1px solid  #cffccf32; */
+    transition: 0.3s ease-in-out;
+    color: #CFFCCF;
+    margin: 10px;
+    position: relative;
+    cursor: grab;
+}
+.profile-config button:hover {
+    background-color: #272626d4;
+    color: #FFF;
+}
+
+.profile-cofig-data {
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.profile-config button span {
+    content: '';
+    width: 3px;
+    height: 15px;
+    background-color: #CFFCCF;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+}
+
+.profile_config_img {
+    
+}
+
+.profile_config_img img {
+    height: 45px;
+    width: 55px;
+    border-radius: 5px;
+}
+
+.profile_config_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #CFFCCF;
+}
+.profile_config_info p:nth-child(3){
+    font-size: 1.4rem;
+    background-color: #272626;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #FF8060;
+}

@@ -1,0 +1,89 @@
+.ToAdd {
+    width: 100%;
+    padding: 0.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.search {
+    display: flex;
+    height: 3.3rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    background-color: #FFFF;
+    outline: none;
+    padding: 0 0.4rem 0;
+    border:none;
+    border-top: 5px solid #cffccf1a;
+    border-left: 5px solid #cffccf1a;
+}
+
+.search button {
+    width: 60px;
+    border: none;
+    background: #333;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+
+/* Results */
+.results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #cffccf1a;
+    color: #CFFCCF;
+    cursor: grab;
+    background-color: #333333;  
+    padding: 0.5rem 0.5rem;
+}
+.results > div {
+    display: flex;
+    gap: 10px;
+}
+.results_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.results_img img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.results_data {
+    height: 50px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.results_data p:nth-child(2) {
+    color: #CFFCCF;
+    font-weight: 600;
+}
+/* Notice */
+.notice p {
+    color: #CFFCCF;
+    background-color: #333;
+}
